@@ -11,8 +11,8 @@ module.exports = {
     d: 'right' //
   },
   MESSAGES: {
-    j: 'LOL',
-    k: 'You lose',
+    j: 'HEY',
+    k: 'Lets play',
     l: 'SNEK KING'
   }
 };

@@ -11,7 +11,7 @@ const connect = () => {
   conn.setEncoding('utf8');
   conn.on('connect', () => {
     console.log('Successfully connected to server.');
-    conn.write(`Name: ${name || 'AAA'}`); //set user name
+    conn.write(`Name: ${name || 'Nim'}`); //set user name
   });
   conn.on('data', data => {
     console.log(data);

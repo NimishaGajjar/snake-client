@@ -17,13 +17,13 @@ const setupInput = (conn) => {
 };
 
 const handleUserInput = key => {
-  if (key === '\u0003') { //CTRL C quits the game
+  if (key === '\u0003') { 
     process.exit();
-  } else if (MOVE_KEYS[key]) { //handling movement
+  } else if (MOVE_KEYS[key]) { 
     connection.write(`Move: ${MOVE_KEYS[key]}`);
-  } else if (MESSAGES[key]) { //sending messages
-    connection.write(`Say: ${MESSAGES[key]}`)
+  } else if (MESSAGES[key]) {
+    connection.write(`Say: ${MESSAGES[key]}`);
   }
 };
 
-module.exports = {setupInput};
+module.exports = { setupInput };
